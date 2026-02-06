@@ -1,0 +1,54 @@
+============================================
+  RUN MANUALLY + HOW TO USE (Test & Compare)
+============================================
+
+--- RUN THE APP ---
+
+  Double-click:  run_manual.bat
+
+  Then open:  http://localhost:8876
+
+
+--- MANUAL COMMAND ---
+
+  pip install -r requirements.txt
+  python -m streamlit run app.py --server.port 8876
+
+
+--- HOW TO TEST & COMPARE PULSES ---
+
+1. PICK PULSES (sidebar)
+   - Check: Phi, Gaussian, DRAG, Square, Sinc, Raised Cosine, Gaussian Square
+   - Uncheck to hide - compare only what you need
+
+2. SET PARAMETERS (sidebar)
+   - Duration (samples): pulse length
+   - Phi Time Start / End: Phi pulse range
+   - Line width: thickness of colored lines
+   - PSD y-axis: frequency plot range
+   - Bloch target angle: rotation angle (deg)
+   - Advanced: Gaussian sigma, DRAG beta
+
+3. VIEW COMPARISONS (main area)
+   - Time Domain: pulse shapes
+   - Frequency Spectrum: leakage
+   - Bloch Spheres: quantum evolution
+   - Energy table: Phi vs others
+   - Leakage metrics: bandwidth, high-freq %
+
+4. RUN TESTS (bottom)
+   - Run Unit Tests
+   - Run Quantum Pulse Test
+   - Regenerate Pulse Comparison
+
+5. EXPORT
+   - Download CSV (all pulses)
+
+--- QUICK WORKFLOW ---
+
+  Phi vs Gaussian:  Check only Phi + Gaussian
+  Add more:  Check DRAG, Square, etc.
+  Tune:  Change duration, Phi time, sigma
+  Validate:  Click Run Unit Tests, Run Quantum Pulse Test
+
+============================================

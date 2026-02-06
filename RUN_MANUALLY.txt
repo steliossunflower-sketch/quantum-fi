@@ -1,0 +1,54 @@
+============================================
+  HOW TO RUN MANUALLY - Phi Pulse Project
+============================================
+
+--- QUICK START (App only) ---
+
+  Double-click:  run_manual.bat
+  -> Opens app at http://localhost:8876
+
+
+--- FULL RUN (comparisons + tests + app) ---
+
+  Double-click:  run_all.bat
+  -> Installs deps, runs pulse comparison, unit tests, quantum test,
+     opens website, starts Streamlit app
+
+
+--- MANUAL COMMANDS (run in this folder) ---
+
+  1. Install (once):
+     pip install -r requirements.txt
+
+  2. Generate pulse comparison plot:
+     python pulse_comparison.py
+
+  3. Run unit tests:
+     python test_pulses_unit.py
+
+  4. Run quantum pulse test:
+     python test_pulse_quantum.py
+
+  5. Open static website:
+     start website\index.html
+
+  6. Start interactive app:
+     python -m streamlit run app.py --server.port 8876
+
+
+--- APP FEATURES ---
+
+  * Pulse visibility: Toggle colored lines (Phi, Gaussian, DRAG, etc.)
+  * Duration & Phi: Sliders for duration, t_min, t_max
+  * Plot options: Line width, PSD y-axis, Bloch target angle
+  * Bloch sphere: Show all pulses or single pulse
+  * Advanced: Gaussian sigma, DRAG beta (in expander)
+  * Run tests: Buttons to run unit tests, quantum test, regenerate plot
+  * Download: CSV export
+
+
+--- IF PORT 8876 IS BUSY ---
+
+  python -m streamlit run app.py --server.port 8880
+
+============================================

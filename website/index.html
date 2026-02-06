@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Ratio Quantum Pulse - 34% More Efficient</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🔬 Golden Ratio Quantum Pulse</h1>
+            <p class="subtitle">A More Efficient Alternative for Quantum Computing</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>The Discovery</h2>
+                <p class="lead">The Phi pulse (A(t) = φ^(-t(t+1)/2)) uses <strong>34% less energy</strong> than Gaussian pulses and is compared here against all standard quantum pulse types: Gaussian, DRAG, Square, Sinc, Raised Cosine, and Gaussian Square.</p>
+            </div>
+        </section>
+
+        <section class="results">
+            <div class="container">
+                <h2>📊 Phi Pulse vs All Quantum Pulse Types</h2>
+                <div class="results-grid">
+                    <div class="result-card">
+                        <h3>Phi Pulse Energy</h3>
+                        <p class="big-number">36.95</p>
+                        <p>Energy units (baseline)</p>
+                    </div>
+                    <div class="result-card">
+                        <h3>vs Gaussian</h3>
+                        <p class="big-number">34%</p>
+                        <p>Less energy than Gaussian</p>
+                    </div>
+                    <div class="result-card">
+                        <h3>Pulse Types</h3>
+                        <p class="big-number">7</p>
+                        <p>Phi, Gaussian, DRAG, Square, Sinc, Raised Cosine, Gaussian Square</p>
+                    </div>
+                </div>
+                <div class="table-container" style="margin-top: 2rem;">
+                    <h3>Energy Comparison (Phi vs All)</h3>
+                    <table class="pulse-table">
+                        <thead>
+                            <tr><th>Pulse Type</th><th>Energy</th><th>Phi Savings</th></tr>
+                        </thead>
+                        <tbody id="pulse-table-body">
+                            <tr><td>Phi (Golden Ratio)</td><td>36.95</td><td>—</td></tr>
+                            <tr><td>Gaussian</td><td>56.36</td><td>34.4%</td></tr>
+                            <tr><td>DRAG</td><td>56.35</td><td>34.4%</td></tr>
+                            <tr><td>Square</td><td>160.00</td><td>76.9%</td></tr>
+                            <tr><td>Sinc</td><td>19.41</td><td>Sinc uses less</td></tr>
+                            <tr><td>Raised Cosine</td><td>59.64</td><td>38.0%</td></tr>
+                            <tr><td>Gaussian Square</td><td>80.16</td><td>53.9%</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="visualization">
+            <div class="container">
+                <h2>📈 Phi Pulse vs All Quantum Pulse Types</h2>
+                <div class="image-container">
+                    <img src="pulse_comparison.png" alt="Phi pulse compared to Gaussian, DRAG, Square, Sinc, Raised Cosine, Gaussian Square - Time and Frequency domain" class="comparison-image">
+                    <p class="image-caption">Left: Time domain — Phi pulse (orange) vs Gaussian, DRAG, Square, Sinc, Raised Cosine, Gaussian Square. Right: Frequency domain showing spectral leakage. Sample rate 1 GS/s.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="explanation">
+            <div class="container">
+                <h2>💡 Why This Matters</h2>
+                <div class="explanation-grid">
+                    <div class="explanation-item">
+                        <h3>Lower Power Consumption</h3>
+                        <p>Quantum computers run at extremely cold temperatures. Less energy means less heat generation and better stability.</p>
+                    </div>
+                    <div class="explanation-item">
+                        <h3>Reduced Errors</h3>
+                        <p>Less energy leakage means more precise control over qubits, leading to fewer computational errors.</p>
+                    </div>
+                    <div class="explanation-item">
+                        <h3>Better Scalability</h3>
+                        <p>More efficient pulses could enable larger quantum computers with better performance characteristics.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="math">
+            <div class="container">
+                <h2>🧮 The Mathematics</h2>
+                <div class="formula-box">
+                    <p class="formula">A(t) = φ^(-t(t+1)/2)</p>
+                    <p>where φ (phi) is the Golden Ratio ≈ 1.618</p>
+                </div>
+                <p>The Golden Ratio appears throughout nature and creates a naturally smooth, energy-efficient pulse shape that decays gracefully at the edges.</p>
+            </div>
+        </section>
+
+        <section class="try-it">
+            <div class="container">
+                <h2>🚀 Try It Yourself</h2>
+                <div class="interactive-app-cta">
+                    <h3>Interactive app</h3>
+                    <p>In the app you can run unit tests, quantum pulse tests, regenerate comparisons, export Qiskit waveforms, and switch to <strong>IBM mode</strong> to see how close Phi is to other pulses in an IBM hardware context.</p>
+                    <a href="http://localhost:8501" target="_blank" rel="noopener noreferrer" class="cta-button">Open interactive app — run tests, compare pulses, use IBM mode</a>
+                    <p class="cta-note">Run the app locally: <code>python -m streamlit run app.py</code> (opens at localhost:8501). For production, set the link to your deployed Streamlit URL.</p>
+                </div>
+                <div class="code-section">
+                    <h3>Quick Start</h3>
+                    <div class="code-block">
+                        <pre><code># Install dependencies
+pip install numpy matplotlib scipy
+
+# Run the comparison
+python pulse_comparison.py</code></pre>
+                    </div>
+                    <p>Check out the <a href="https://github.com/yourusername/quantum-fi" target="_blank">GitHub repository</a> for the full code and documentation.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <h2>👤 About This Project</h2>
+                <p>This project demonstrates that alternative mathematical approaches can improve quantum computing efficiency. The Golden Ratio pulse offers significant energy savings while maintaining the smooth, precise characteristics needed for quantum control.</p>
+                <p><strong>Open Source:</strong> This project is open source and available under the MIT License. Contributions and improvements are welcome!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Golden Ratio Quantum Pulse Project</p>
+            <p>
+                <a href="https://github.com/yourusername/quantum-fi" target="_blank">GitHub</a> |
+                <a href="LICENSE" target="_blank">License</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
