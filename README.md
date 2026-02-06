@@ -1,5 +1,7 @@
 # Golden Ratio Quantum Pulse: A More Efficient Alternative
 
+**Live app (shareable link):** [Add your Streamlit Cloud link here after deploy — see DEPLOY.md]
+
 ## 🔬 Discovery
 
 This project demonstrates that a **Golden Ratio-based quantum pulse** uses **34% less energy** than standard Gaussian pulses while maintaining comparable spectral leakage properties. This finding could have significant implications for quantum computing efficiency.
