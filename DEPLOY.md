@@ -1,5 +1,7 @@
 # Deploy checklist — get a shareable link (e.g. for LinkedIn)
 
+**Live app URL:** [https://quantum-fi-j6fxpqpcgxpodshjgsfygx.streamlit.app/](https://quantum-fi-j6fxpqpcgxpodshjgsfygx.streamlit.app/)
+
 Do these steps once. After that, your app is live and you can share the link everywhere.
 
 ---
