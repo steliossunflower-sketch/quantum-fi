@@ -7,7 +7,7 @@ font = "sans serif"
 
 [server]
 headless = true
-port = 8876
+# Do not set port here — cloud (Streamlit Cloud) uses 8501 for health checks
 
 [browser]
 gatherUsageStats = false
