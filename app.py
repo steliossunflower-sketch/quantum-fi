@@ -159,6 +159,46 @@ st.session_state.ibm_mode = ibm_mode
 if ibm_mode:
     st.sidebar.caption("Single-qubit gates on IBM hardware use Gaussian/DRAG at ~10–50 ns. Current duration (samples) = duration in ns at 1 GS/s.")
 
+st.sidebar.divider()
+with st.sidebar.expander("Disclaimer & Philosophy", expanded=False):
+    st.markdown("""
+    ### Philosophy & Transparency
+
+    **Energy definition**  
+    In this project, "energy" means the sum of squared pulse amplitudes (a standard signal-processing measure), not physical energy in joules. Lower values indicate a more concentrated pulse for the same peak amplitude.
+
+    **The 34% claim**  
+    For the default parameters (duration=160, Gaussian σ=duration/5), the Phi pulse has approximately 34% lower sum-of-squares energy than the Gaussian. This is verified by unit tests in the repository. The comparison is against this specific Gaussian parameterization; other shapes (e.g. Sinc) can have lower energy in this metric.
+
+    **Leakage**  
+    Phi has comparable high-frequency spectral leakage to Gaussian and DRAG—not better. Sinc, by design, typically has lower leakage. The app's Leakage Metrics table shows the values for all pulse types.
+
+    **Scope**  
+    This is a signal-level, normalized comparison. We do not model gate fidelity, decoherence, or hardware explicitly. Validation on real quantum hardware would be future work.
+
+    **Formulas**  
+    Phi pulse: A(t) = φ^(-t(t+1)/2), where φ ≈ 1.618. All pulses are normalized to peak amplitude 1.0. See the README and code for full details.
+
+    **Qiskit**  
+    The app uses Qiskit when available for quantum state simulation; the pulse comparison itself is framework-agnostic.
+
+    ---
+
+    ### Supporting this research
+
+    This project is independent, open-source research. If you find it useful and would like to support further work—including compute, tools, and development time—crypto donations are welcome and greatly appreciated.
+
+    | Network | Address |
+    |---------|---------|
+    | **Bitcoin** | `1EJEqE3LgQK5etpmz2cu2vncxBiycYVWuh` |
+    | **Ethereum** | `0xa9b62c1bddec256f15b68b0a604fb9dc93bf494c` |
+    | **XRP** (Address) | `rGDreBvnHrX1get7na3J4oowN19ny4GzFn` |
+    | **XRP** (Memo) | `766496908` |
+    | **BNB** | `0xa9b62c1bddec256f15b68b0a604fb9dc93bf494c` |
+
+    Thank you for your interest and support.
+    """)
+
 # Sample rate: 1 GS/s (typical for quantum hardware)
 dt_ns = 1e-9  # seconds per sample
 
