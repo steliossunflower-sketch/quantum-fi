@@ -177,7 +177,11 @@ with st.sidebar.expander("Disclaimer & Philosophy", expanded=False):
     This is a signal-level, normalized comparison. We do not model gate fidelity, decoherence, or hardware explicitly. Validation on real quantum hardware would be future work.
 
     **Formulas**  
-    Phi pulse: A(t) = φ^(-t(t+1)/2), where φ ≈ 1.618. All pulses are normalized to peak amplitude 1.0. See the README and code for full details.
+    **Phi pulse:** A(t) = φ^(-t(t+1)/2), where φ = (1+√5)/2 ≈ 1.618 (Golden Ratio). The exponent -t(t+1)/2 creates a smooth, symmetric decay: the amplitude is 1 at the peak (t ≈ -0.5) and falls toward the edges. After evaluation, we normalize so the maximum amplitude equals 1.0. This defines the envelope of the microwave pulse—the shape of the control signal over time.
+
+    **Gaussian (comparison):** A(t) = exp(-t²/(2σ²)), with σ = duration/5 by default. Also normalized to peak 1.0. This is the standard envelope used in quantum control (e.g. Qiskit Pulse).
+
+    **Why Phi?** Exploratory: we test whether a Golden Ratio–shaped envelope yields lower sum-of-squares energy than this Gaussian while keeping comparable spectral leakage. The choice is mathematical, not derived from hardware; validation on real qubits would be future work.
 
     **Qiskit**  
     The app uses Qiskit when available for quantum state simulation; the pulse comparison itself is framework-agnostic.
