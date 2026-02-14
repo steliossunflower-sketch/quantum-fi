@@ -188,12 +188,14 @@ with st.sidebar.expander("Disclaimer & Philosophy", expanded=False):
 
     This project is independent, open-source research. If you find it useful and would like to support further work—including compute, tools, and development time—crypto donations are welcome and greatly appreciated.
 
-    **Bitcoin**
+    Use each address on its native network only (Bitcoin → Bitcoin, ETH → Ethereum, BNB → BNB Smart Chain).
+
+    **Bitcoin** (Bitcoin network)
     """)
     st.code("1EJEqE3LgQK5etpmz2cu2vncxBiycYVWuh", language=None)
-    st.markdown("**Ethereum**")
+    st.markdown("**Ethereum** (Ethereum network)")
     st.code("0xa9b62c1bddec256f15b68b0a604fb9dc93bf494c", language=None)
-    st.markdown("**BNB**")
+    st.markdown("**BNB** (BNB Smart Chain)")
     st.code("0xa9b62c1bddec256f15b68b0a604fb9dc93bf494c", language=None)
     st.markdown("""
     Thank you for your interest and support.
