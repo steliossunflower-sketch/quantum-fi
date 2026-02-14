@@ -188,14 +188,14 @@ with st.sidebar.expander("Disclaimer & Philosophy", expanded=False):
 
     This project is independent, open-source research. If you find it useful and would like to support further work—including compute, tools, and development time—crypto donations are welcome and greatly appreciated.
 
-    | Network | Address |
-    |---------|---------|
-    | **Bitcoin** | `1EJEqE3LgQK5etpmz2cu2vncxBiycYVWuh` |
-    | **Ethereum** | `0xa9b62c1bddec256f15b68b0a604fb9dc93bf494c` |
-    | **XRP** (Address) | `rGDreBvnHrX1get7na3J4oowN19ny4GzFn` |
-    | **XRP** (Memo) | `766496908` |
-    | **BNB** | `0xa9b62c1bddec256f15b68b0a604fb9dc93bf494c` |
-
+    **Bitcoin**
+    """)
+    st.code("1EJEqE3LgQK5etpmz2cu2vncxBiycYVWuh", language=None)
+    st.markdown("**Ethereum**")
+    st.code("0xa9b62c1bddec256f15b68b0a604fb9dc93bf494c", language=None)
+    st.markdown("**BNB**")
+    st.code("0xa9b62c1bddec256f15b68b0a604fb9dc93bf494c", language=None)
+    st.markdown("""
     Thank you for your interest and support.
     """)
 
